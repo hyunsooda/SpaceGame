@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/star_wars.css">
+    <script src='pathseg.js'></script>
+
+    <svg style='display:none'xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1720px" height="920px" viewBox="0 0  1720 920" preserveAspectRatio="xMidYMid meet" ><defs id="svgEditorDefs"><polygon id="svgEditorShapeDefs" fill="khaki" stroke="black" style="vector-effect: non-scaling-stroke; stroke-width: 1px;"/></defs><rect id="svgEditorBackground" x="0" y="0" width="1720" height="920" style="fill: none; stroke: none;"/><path d="M32,80l80,-56l-64,64v32l16.842,-23.579000000000008l31.158,15.579000000000008l32,-104l-128,56Z" stroke="black" id="e2_shape" style="vector-effect: non-scaling-stroke; stroke-width: 1px;" transform="matrix(0.1875 0 0 0.1875 91 459.5)" fill="khaki"/></svg>
+    <style>
+      #btn {
+        z-index : 5;
+        position : absolute;
+        display : none;
+      }
+      .button-2{
+        width:140px;
+        height:50px;
+        border:2px solid #34495e;
+        float:left;
+        text-align:center;
+        cursor:pointer;
+        position:relative;
+        box-sizing:border-box;
+        overflow:hidden;
+        margin:0 0 40px 50px;
+      }
+      .eff-2{
+        width:140px;
+        height:50px;
+        top:-50px;
+        background:#34495e;
+        position:absolute;
+        transition:all .5s ease;
+        z-index:1;
+      }
+      .button-2 a{
+        font-family:arial;
+        font-size:16px;
+        color:#34495e;
+        text-decoration:none;
+        line-height:50px;
+        transition:all .5s ease;
+        z-index:2;
+        position:relative;
+      }
+      .button-2:hover .eff-2{
+        top:0;
+      }
+      .button-2:hover a{
+        color:#fff;
+      }
+    </style>
+</head>
+
+<body>
+
+        <img src='../images/stars-bg.jpg'> </img>
+        <div id='box' style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
+                <div style="margin-top:-290px;">
+                </div>
+              </div>  
+              <h1>Space Game<sub>2017.09</sub></h1>
+              
+              <div id="titles">
+                <div id="titlecontent">
+                  <p class="center">Developer : Eat2go </p> 
+                  
+                  <p>This is game the based on 2d physics. The time that game is over will take within 5min. Also, you may visit to my repo. </br>
+                     https://github.com/hyunsooda </p>
+
+                  <p> </p>
+                </div>
+        </div>
+
+        <div class="button-2" id='btn'>
+            <div class="eff-2"></div>
+            <a href="#"> Replay </a>
+        </div>
+</body>
+<script src='decomp.js'></script>
+<script src='convert_main.js'> </script>
+</html>
